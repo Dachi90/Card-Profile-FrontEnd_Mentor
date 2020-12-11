@@ -1,0 +1,94 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--dark-cyan);
+  background-image: url("../img/bg-pattern-top.svg"), url("../img/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vw;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  text-align: center;
+  width: 326px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-background-img {
+  width: 100%;
+}
+
+.profile-img {
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-top: -53px; /* La imagen mide 96 pero tiene un boder de 5px tanto arriba como abajo, asi que para centrarla le puse un margen top negativo de 48px+5px*/
+}
+
+.text-primary {
+  font-weight: 700;
+}
+
+.text-secondary {
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-top: 1px solid rgba(153, 153, 153, 0.383);
+}
+
+.stats .text-secondary {
+  font-size: 80%;
+}
+
+.stats .text-primary {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.stats .text-secondary {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
